@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      //pythag calc
+      //we need A, B, and C
+      //we need to square A, B, and C
+      //activate when the user presses a button
+      function pythag() {
+	      var a = prompt("Need 'a' value");
+        var asq = a ** 2; //stores the value
+        var b = prompt("Need 'b' value");
+        var bsq = b ** 2;
+        var c = Math.sqrt(asq + bsq);
+        window.alert("Your answer is " + c.toFixed(3)); //toFixed(3) rounds number to 3 decimal places
+}
+    </script>
+    <button onclick="pythag()">Pythag Calculator</button>
+  </body>
+</html>
