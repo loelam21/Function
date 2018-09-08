@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      //ask user for a number between 1 and 5
+      //scold user if number is not between 1 and 5
+      //ask another player for a number between 1 and 5
+      //compare both numbers
+      //IF the numbers are same, alert (you win);
+      //ELSE IF the numbers are not the same (tell each player what they guessed);
+      function game() {
+        var playerOne = prompt("Player 1: Enter a number between 1 and 5.");
+        var playerTwo = prompt("Player 2: Enter a number between 1 and 5.");
+        if ((playerOne < 1 || playerOne > 5) || (playerTwo < 1 || playerTwo > 5)) {
+          window.alert("You are a dirty cheater");
+          window.alert("LOOOOOOOOOOOOOOOOOOOOOSER");
+          return;
+        }
+        if (playerOne === playerTwo) {
+          window.alert("You win!");
+        }
+        else {
+          window.alert("Player 1 chose " + playerOne);
+          window.alert("Player 2 chose " + playerOne);
+        }
+      }
+    </script>
+    <button onclick="game()">Click To Play</button>
+  </body>
+</html>
